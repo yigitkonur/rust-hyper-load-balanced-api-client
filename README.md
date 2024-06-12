@@ -1,4 +1,4 @@
-# 10K req / second LLM requester with weighted load balance
+# 10K req/sec LLM Requester w/ Load Balancer
 
 To develop new features for Wope's AI expension we required extensive need of processing few thousand request per second for long-running tasks like LLM requests. We needed to handle up to 10,000 requests per second efficiently. As part of Cloudflare's startup program, we received significant support, including access to a GPU cluster. However, consuming this capacity on an average machine (8 cores, 16 GB RAM) presented significant challenges. Python's Global Interpreter Lock (GIL) limits prompted us to seek a compiled language solution. While our backend primarily uses Go, I decided to explore Rust's capabilities for this high-performance task.
 
