@@ -4,6 +4,10 @@ To develop new features for Wope's AI expension we required extensive need of pr
 
 ## Introduction
 
+https://github.com/yigitkonur/rust-hyper-load-balanced-api-client/assets/9989650/5040a7d5-6e10-4ce2-803e-830d6737c359
+
+_Processing only 600 / sec to not make video size too large - but you can consume up to 10K req / sec._
+
 `rust-hyper-load-balanced-api-client` is a high-performance Rust tool designed to send API requests (specifically to LLMs) with built-in weighted load balancing, retry mechanisms, and rate limiting. Utilizing the `hyper` library for fast request handling, this tool manages large volumes of asynchronous requests, optimized to handle up to 10,000 requests per second.
 
 ## Features
@@ -102,13 +106,6 @@ The project consists of a single main Rust file (`main.rs`) that handles all the
 
 - `process_api_requests_from_file`: Manages reading requests from the file and sending them asynchronously.
 - `send_request`: Sends individual API requests and handles retries and logging.
-
-### Logging / Demo
-
-https://github.com/yigitkonur/rust-hyper-load-balanced-api-client/assets/9989650/fabceab5-b802-45e4-9e20-8feaea6fba6d
-Processing only 600 / sec to not make video size too large - but you can consume up to 10K req / sec.
-
-Click the image above to watch a video demonstrating the speed and efficiency of the tool.
 
 ## Conclusion
 
